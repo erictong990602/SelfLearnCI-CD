@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12 
         with:
-          heroku_api_key: "1f8b7f45-f3f6-4761-ac8c-4cd030568603"
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: "selflearncicd220926" #Must be unique in Heroku
           heroku_email: "erictong1999it@hotmail.com"
 
